@@ -1,0 +1,9 @@
+---
+const { url } = Astro.props;
+---
+
+{/**
+ * @note Interesting astro behaviour here with newlines & slots
+ * @see https://github.com/withastro/prettier-plugin-astro/issues/352
+ */}
+<a class="hover:text-sky-900 transition-colors duration-100" href={url} target="_blank" rel="noopener noreferrer"><slot /></a>
